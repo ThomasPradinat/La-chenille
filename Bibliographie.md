@@ -134,6 +134,7 @@ Figure I.3. – Schéma du système de ressorts
 
 
 ### II. 4. Résumé
+
 La fixation que nous avons retenue est une pince constituée de quatre doigts, qui pourra s’ouvrir par l’activation d’un moteur linéaire. Lorsque le moteur linéaire n’est pas activé, la pince tient en position « fermée » grâce à un système de ressorts. Même si le choix des ressorts se porte plus vers des ressorts de compression, la question se pose de savoir si on ne placerait pas des ressorts à traction pour faire le lien entre la première phalange et le corps de la pince.
 
 
@@ -143,10 +144,31 @@ La fixation que nous avons retenue est une pince constituée de quatre doigts, q
 ### III. 1. Le bras
 
 ### III.	1. 1. Cahier des charges
+
 Le bras doit être capable d’orienter la tête de la chenille dans toutes les directions. Aussi le mouvement de la tête doit être fait dans les trois dimensions car le tronc doit être considéré comme cylindrique et non plat comme le laissait entendre la figure. 
 
 
 ### III.	1. 2. Etat de l’art
 
 Parmi les bras robotiques qui existent dans la littérature, nous en avons sélectionnés quelques-uns pour décrire notre raisonnement : 
+
+<img width="659" alt="brasrobot1" src="https://github.com/ThomasPradinat/La-chenille/assets/147373681/f4705780-a804-4d4e-b5c6-5b65f91ae23f">
+
+Figure III. 1. 2. 1. - Bras hydraulique de Fabularium cabinet [15]
+
+Le problème est qu’il ne peut se déplacer que dans un plan orthogonal au sol : il ne tourne pas. Cela reviendrait à faire un robot à mouvement linéaire.
+
+<img width="359" alt="brasrobot2" src="https://github.com/ThomasPradinat/La-chenille/assets/147373681/3a7db1df-1cc0-4850-9894-bf4dc5ad7b18">
+
+Figure III. 1. 2. 2. - Tinkerkit Braccio robot de Arduino [16]
+
+En ajoutant une rotation à chaque extrémité, le robot est maintenant capable d’orienter la tête dans toutes les directions. Seulement, cela est vrai sur un plan mais il n’est pas capable de pencher la tête de droite à gauche pour suivre la courbure du tronc.
+
+<img width="425" alt="brasrobot3" src="https://github.com/ThomasPradinat/La-chenille/assets/147373681/fac2ec03-d34c-4567-8135-98c20b70c4ea">
+
+Figure III. 1. 2. 3. - NED2 de Niryo[17]
+
+Avec une rotation dans l’axe de l’avant-bras, la tête peut être placée dans toutes les directions de l’espace. Il s’agit d’un axe à 6 degrés de liberté, le plus polyvalent possible. Enfin, nous pensons que la rotation à l’extrémité du bras n’est peut-être pas utile dans notre cas car elle serait faite par la rotation dernièrement ajoutée sur l’avant-bras.
+
+Contrairement à tous les bras robotiques cités précédemment, le bras doit être capable de soulever chacune de ses extrémités en s’appuyant sur l’autre. Il ne faut donc pas que les moteurs à une extrémité soient moins puissants qu’à l’autre. Il faut donc partout les mêmes moteurs, tous assez puissants pour soulever le bras en entier, comme sur le Climbot[18].
 
