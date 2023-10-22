@@ -87,4 +87,6 @@ Une grande partie des robots qui agrippent les arbres ont un mouvement linéaire
 
 Une de nos plus grandes inspirations est le Treebot [9]. C’est un robot capable de monter sur un arbre, en étant capable de faire des mouvements en trois dimensions, pour éviter des branches lors de l'ascension, ou bien d’avancer dessus. Il utilise trois câbles semi-rigides pour pousser en avant la partie avant de son robot ; le fait de jouer sur la différence de poussée des trois câbles permet de déplacer l’avant du robot dans les trois dimensions de l’espace. Il fait aussi un mouvement périodique de tirer-pousser mais peut aussi contourner des obstacles sur le tronc : 
 
+![entete](https://github.com/ThomasPradinat/La-chenille/assets/147373681/b6b9b057-a7ea-477c-bf7a-08bf505c6b44)
+<img width="400" alt="mouvement treebot" src="https://github.com/ThomasPradinat/La-chenille/assets/147373681/e80ef61c-fa7c-42c3-9f82-f166d18ee5fe">
 
