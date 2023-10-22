@@ -113,3 +113,18 @@ Nous souhaitons posséder une fixation assez puissante pour pouvoir supporter le
 
 Différents types de fixations existent pour les robots grimpeurs : fixation par aspiration sous vide [10][11], par attraction magnétique [12][13] ou encore par adhésion électro-statique [14]. Néanmoins, ces fixations sont adaptées pour adhérer sur des surfaces plates, lisses ou métalliques. Etant donné que nous souhaitons réaliser un robot capable de grimper sur un arbre, c’est-à-dire une surface avec reliefs et non métallique, ces solutions ne nous conviennent pas. 
 Nous nous sommes donc inspirés de la pince du Treebot, étant donné que la pince est une fixation qui répondait à nos besoins. La pince en question utilise 4 doigts légèrement courbés pour s’accrocher à l’arbre. Un moteur linéaire pousse la première phalange du doigt pour relever celui-ci (voir ci-dessous). Si le moteur linéaire se retire, des ressorts plaquent le doigt sur le tronc. Le doigt sera capable de tenir au tronc grâce à des aiguilles chirurgicales, servant de griffes.
+
+![pince treebot](https://github.com/ThomasPradinat/La-chenille/assets/147373681/8e695f65-afd8-46b7-8c89-8c2b7dcef8a6)
+
+Figure I.2. – Schéma de la pince utilisé
+
+
+
+### II. 3. Solution envisagée
+
+Les principaux éléments d’une telle pince sont le moteur linéaire et les ressorts :  c’est donc sur ces deux éléments que nous allons concentrer notre attention dans le paragraphe qui suit. 
+
+Le moteur linéaire que nous utiliserons devra être assez petit pour pouvoir être placé dans chaque fixation tout en étant assez puissant pour déployer les serres de la pince (cf. annexe 1). De plus, nous avons besoin d’un pont en H pour inverser le courant au niveau des bornes du moteur linéaire pour pouvoir permettre au moteur d’effectuer une translation dans un sens et dans l’autre (cf. annexe1).  	
+
+Au total, pour chaque pince, nous utiliserons 8 ressorts par fixation (2 ressorts pour chaque doigt, sachant qu’une fixation compte 4 doigts). Cependant, lorsqu’il s’agit du ressort situé au joint A sur le schéma ci-dessus, deux solutions s’offrent à nous : choisir un ressort de compression ou choisir un ressort de traction. Nous souhaitons placer un piston dans les ressorts de compression que nous utiliserons pour qu’ils ne puissent pousser que dans une direction unique et ne se déforment pas durant l’effort : utiliser un ressort de traction permettrai de s’affranchir de l’utilisation d’un piston dans le ressort :
+
