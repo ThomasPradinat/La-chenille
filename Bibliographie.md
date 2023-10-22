@@ -218,3 +218,101 @@ Le treuil doit être capable de tracter le poids du corps ainsi que la charge su
 Durant la phase de poussée, le treuil sera libre et se déroulera (ou bien il tournera pour libérer du câble) lorsque le bras fait avancer la tête ; cependant au retour, le treuil s’active et c’est lui qui tire l’ensemble du poids du corps vers la tête.
 Pour ce qui est du choix du treuil à utiliser, en acheter un serait inutile, premièrement par ce que nous n’aurons pas besoin de trois mètres de câble mais aussi que cela est facile à construire soit même avec un servomoteur à 360°, comme on peut le voir sur cette image : 
 
+![treuille](https://github.com/ThomasPradinat/La-chenille/assets/147373681/4384940a-17a0-49e4-8528-4a5b9c27372a)
+
+Figure III. 2. 1. 1. – Treuil Servo Intégré à Tambour GRC 25T, Accessoires de Mise à Niveau
+
+La pièce dorée peut être fabriquée à l’imprimante 3D, tandis que le câble et la bobine peuvent être achetés en ligne (cf. annexe1).
+
+Le servomoteur est utilisé directement autour de son axe, donc la charge qu’il pourrait tirer est celle indiquée par le fabricant (comme 25kg/cm signifie pour nous que l’on peut tracter 25kg avec). Le moteur doit être capable de porter le corps ainsi que sa charge, mais aussi une partie du poids du bras ; donc il ne peut pas s’agir d’un petit servomoteur de 3kg/cm. Un servomoteur de 10kg/cm pourrait suffire mais un de 25 a été trouvé, un peu moins cher que le précédent (cf. annexe1).
+
+
+
+
+## Chapitre IV : Les capteurs
+
+### IV. 1. Cahier des charges
+
+Les capteurs devront permettre à Absolem de détecter un obstacle se situant devant lui, mais aussi de comprendre la courbure du tronc pour permettre aux pinces de s’accrocher correctement à l’arbre. 
+
+### IV.  2. Etat de l’art
+
+<img width="880" alt="tableau capteurs" src="https://github.com/ThomasPradinat/La-chenille/assets/147373681/037e98a9-b03a-4a83-a541-78f9e8e26a0c">
+
+ 
+### IV. 3. Solution retenue
+
+Le capteur que nous utiliserons pour détecter les obstacles situés en face du robot sera un pointeur laser : l’utilisation d’un radar serait optimale sur matériau métallique (ce qui n’est pas ce que nous voulons observer) et le sonar ne fonctionne qu’immergé sous l’eau (l’onde s’évanouit rapidement dans l’air, sans compter le fait qu’émettre des ultrasons dans une zone naturelle peut perturber la faune environnante). Un système de balayage pourra être ajouté afin de permettre au robot d’avoir une vision 3D de ce qui se situe en face de lui. 
+
+Pour les capteurs qui serviront à lire la courbure du tronc, ici encore, des pointeurs laser seront utilisés, pour les mêmes raisons citées précédemment. L’idée est de placer 3 pointeurs lasers sur différents endroits de la pince pour pouvoir voir si les capteurs observent différentes distances entre la pince et le tronc (c’est-à-dire une inclinaison de la pince par rapport au tronc).
+
+## Chapitre V : Alimentation et matériaux
+
+### V. 1. Caractéristiques générales de l’alimentation
+
+Voici un récapitulatif de tout ce qui a besoin d’alimentation dans notre robot : 
+
+- 2 moteurs linéaires = 12V.
+  
+- 5 servomoteurs du bras = 5-7.4V
+  
+- servomoteur du treuil = 4.8-7V
+  
+- carte Arduino = + de 5V
+  
+- L293 = 5V
+  
+- capteurs
+  
+On peut simplifier tout ceci avec uniquement deux tensions différentes : 
+
+12V → 2 moteurs linéaires
+
+6V → Carte Arduino + L293 + servomoteur du treuil + 5 servomoteurs du bras + capteurs
+
+Ensuite, nous utiliserons un régulateur de tension de 12 vers 6V pour n’avoir qu’une seule batterie de 12V (cf. annexe 1).
+La batterie doit être assez petite est légère pour pouvoir être transportée par la chenille (cf. annexe1). 
+
+
+### V.	2. Matériaux
+
+Le robot ne doit pas être trop lourd pour ne pas se décrocher de l’arbre mais assez solide pour pouvoir avoir une accroche efficace sur l’arbre. Surtout, la plus grosse contrainte que nous allons avoir en termes de matériaux est celle de la fabrication. En effet, la plupart des pièces vont être construites sur mesures à l’imprimante 3D, donc les principales parties du robot seront en plastique. Quelques parties qui auraient besoin d’être plus solides pourraient aussi être en métal léger. 
+La chenille doit être capable de résister aux intempéries : vent, pluie… Il sera donc pertinent dans un second temps de perméabiliser les fils et les compartiments de la batterie et de la carte.
+
+## Conclusion
+
+Le robot sera constitué de deux parties (les fixations) reliées par un bras mécanique ainsi que par un treuil. Les fixations seront constituées de 4 doigts animés par un moteur linéaire et un système de ressorts. Le bras mécanique possèdera quant à lui 5 axes dont les articulations seront assurées par des servomoteurs. L’ajout d’un second corps ou d’une queue pour le robot est en discussion. Les différentes fixations seront également reliées par un treuil pour ne pas trop mettre d’effort sur le bras mécanique. Des capteurs laser assureront au robot la visualisation de son environnement ainsi que la bonne lecture des reliefs du tronc. 
+
+
+## Annexes
+
+### Annexe 1
+
+Moteur linéaire   Quantité : 2   Lien moteur linéaire : 
+https://www.amazon.fr/Poweka-automatique-Domotique-escamotables-Ascenseur/dp/B0B4MWRFX9/ref=sr_1_6?keywords=Linear+Actuator+12&qid=1696067441&sr=8-6 
+
+Servomoteur bras   Quantité : 5   Lien servomoteur bras : 
+https://fr.aliexpress.com/item/1005004347055116.html?spm=a2g0o.productlist.main.119.704c6442SpzyuF&algo_pvid=c4f3b939-388c-4c17-85ac-7a311dc71bd6&algo_exp_id=c4f3b939-388c-4c17-85ac-7a311dc71bd6-59&pdp_npi=4%40dis%21EUR%2123.28%2114.9%21%21%2124.04%21%21%40211b5e2b16979636636915308e1899%2112000030010275368%21sea%21FR%211698746122%21&curPageLogUid=kr6TotET2Pq0 
+
+Treuil   Quantité : 1   Lien treuil : 
+https://fr.aliexpress.com/item/4000932042855.html?src=google&src=google&albch=shopping&acnt=248-630-5778&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&src=google&albch=shopping&acnt=248-630-5778&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=fr4000932042855&ds_e_product_merchant_id=109164712&ds_e_product_country=FR&ds_e_product_language=fr&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=20180143332&albag=&isSmbAutoCall=false&needSmbHouyi=false&gclid=CjwKCAjw-KipBhBtEiwAWjgwrGMbjXMAoKySz195NetisjnpKh6SXa2wjud1a5qi8O21ZrP0MjvlphoCPm4QAvD_BwE&aff_fcid=0768b7cb076a4a35994d90e072dee117-1697309197398-07037-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0768b7cb076a4a35994d90e072dee117-1697309197398-07037-UneMJZVf&terminal_id=1065899e4d1a410e821ded913fef0ef5&afSmartRedirect=y 
+
+Servomoteur treuil   Quantité : 1   Lien servomoteur treuil : 
+https://fr.aliexpress.com/item/4000114287971.html?src=google&src=google&albch=shopping&acnt=248-630-5778&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&src=google&albch=shopping&acnt=248-630-5778&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=fr4000114287971&ds_e_product_merchant_id=109256086&ds_e_product_country=FR&ds_e_product_language=fr&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=20180143332&albag=&isSmbAutoCall=false&needSmbHouyi=false&gclid=CjwKCAjwkNOpBhBEEiwAb3MvvWpa0tSuRSOGOBsLRq8m4lYeY8cllPAk0LQIW7yV610MUueB5kWNPBoCccEQAvD_BwE&aff_fcid=b2d802dd0a8344b8a4324f2f2cb2fe9a-1697980295995-05945-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=b2d802dd0a8344b8a4324f2f2cb2fe9a-1697980295995-05945-UneMJZVf&terminal_id=1065899e4d1a410e821ded913fef0ef5&afSmartRedirect=y 
+
+Capteurs   Quantité : 7   /
+
+Régulateur de tension   Quantité : 1   Lien régulateur de tension : 
+https://fr.aliexpress.com/item/4000091864476.html?src=google&src=google&albch=shopping&acnt=248-630-5778&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&isSmbAutoCall=false&needSmbHouyi=false&src=google&albch=shopping&acnt=248-630-5778&slnk=&plac=&mtctp=&albbt=Google_7_shopping&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=fr4000091864476&ds_e_product_merchant_id=107733623&ds_e_product_country=FR&ds_e_product_language=fr&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=20180143335&albag=&isSmbAutoCall=false&needSmbHouyi=false&gclid=CjwKCAjwkNOpBhBEEiwAb3MvvfiKAU0IvT4mpxK7RanSuN_RsDsOJToHZo3NSkQdEptxKA_KTgkEThoCTh8QAvD_BwE&aff_fcid=0abd50a94eb04cd38a9775afba3303f4-1697992406176-01159-UneMJZVf&aff_fsk=UneMJZVf&aff_platform=aaf&sk=UneMJZVf&aff_trace_key=0abd50a94eb04cd38a9775afba3303f4-1697992406176-01159-UneMJZVf&terminal_id=1065899e4d1a410e821ded913fef0ef5&afSmartRedirect=y
+
+Batterie   Quantité : 1   Lien batterie : 
+https://fr.grandado.com/products/original-12v-6-8-ah-6800mah-18650-batteries-rechargeables-12v-avec-bms-batterie-au-lithium-carte-de-protection-chargeur-12-6v?variant=UHJvZHVjdFZhcmlhbnQ6MjM2NTc1OTE0&gclid=CjwKCAjwkNOpBhBEEiwAb3MvvbuRh8Ids2Y29pXX_rKz-rfYT0E51n6E6kvAsRBGaC-MrQd_PXtcFBoCMk0QAvD_BwE
+
+### Annexe 2
+
+Thomas : 
+
+
+
+Aurélien : 
+
