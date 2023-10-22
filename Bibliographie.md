@@ -180,3 +180,41 @@ Figure III. 1. 2. 4. – Schéma des liaisons du Climbot
 
 Le raisonnement précédent nous donne un bras à 5 axes, comme ceci : 
 
+![Image liaisons bras](https://github.com/ThomasPradinat/La-chenille/assets/147373681/6237ae9a-0cef-4754-b212-ff22cce14020)
+
+Figure III. 1. 3. 1. – Schéma des liaisons du bras 
+
+Les articulations du bras seraient des servomoteurs. En effet, seule une position précise est requise pour chaque moteur ; aussi, un moteur pas à pas serait trop volumineux et trop lourd pour qu’il en soit placé 5 sur notre robot.
+
+Les servomoteurs devront être attachés de manière à ne pas fonctionner par arrachement (comme pour le bras d’Arduino). Pour les servomoteurs qui font une rotation directement dans leur axe, il ne faut pas que ce soit le servomoteur qui tienne le reste du bras, donc il faut que la partie mobile soit déjà liée au reste comme ceci : 
+
+![servomoteur tout droit](https://github.com/ThomasPradinat/La-chenille/assets/147373681/1146cc45-ded6-4e6f-bab8-739a320a96a2)
+
+Figure III. 1. 3. 2. – Schéma de liaison du servomoteur 
+
+Une estimation des servomoteurs qui nous semble raisonnable serait des servomoteurs de 35 kg/cm ; cela permettrait de soulever la tête et le bras (pensant donc au maximum 1 kg) à une distance maximale de 30 cm. Ceci semble être en accord avec les dimensions de notre robot. Par exemple nous avons trouvé les servomoteurs ‘’35kg servo numérique sans noyau” qui est capable de faire une rotation supérieure à 180°et qui fonctionne entre 5 et 7.4V (cf. annexe 1).
+
+Un des risques par rapport à la montée à l’arbre, avec le bras mécanique, est que lorsque la tête est détachée, elle risque de créer un moment trop important sur le corps, qui risque de s’arracher du tronc. Pour pallier cela, il y aurait deux solutions : premièrement, un second corps pourrait être ajouté, ainsi la chenille aurait toujours deux parties accrochées au tronc pendant que la troisième se détacherait pour avancer. Cette solution apporterait deux avantages supplémentaires mais aussi des inconvénients. Cela permettrait peut-être de porter plus de charge, en plus de rendre la chenille plus stable. Cependant, elle consommerait beaucoup plus d’énergie pour se déplacer et serait plus lente pour monter, étant donné que le mouvement serait en trois temps au lieu de deux.
+
+La seconde solution serait de rajouter une “queue” à notre chenille pour plaquer le corps contre le tronc (comme cela a été ajouté sur le robot Rise de Boston Dynamics [19]).
+
+Nous pensons que le choix de la solution la plus adaptée dépendra de l’efficacité de la pince que nous arriverons à faire.
+
+### III.	1. 4. Résumé
+
+Le bras reliant la tête au corps est un bras à 5 axes dont les rotations sont effectuées par des servomoteurs de 25kg/cm pour supporter le poids de la tête. Ils devront être assemblés entre eux de manière à ne pas fonctionner par arrachement.
+Le poids de la partie avant du robot va impliquer de sûrement ajouter un composant supplémentaire à notre robot, soit une queue, soit un second corps.
+
+
+
+### III. 2. Le treuil
+
+### III. 2. 1. Cahier des charges
+
+Le treuil doit être capable de tracter le poids du corps ainsi que la charge supplémentaire que ce dernier pourrait porter.
+
+### III. 2. 1. Etat de l’art et solution envisagée
+
+Durant la phase de poussée, le treuil sera libre et se déroulera (ou bien il tournera pour libérer du câble) lorsque le bras fait avancer la tête ; cependant au retour, le treuil s’active et c’est lui qui tire l’ensemble du poids du corps vers la tête.
+Pour ce qui est du choix du treuil à utiliser, en acheter un serait inutile, premièrement par ce que nous n’aurons pas besoin de trois mètres de câble mais aussi que cela est facile à construire soit même avec un servomoteur à 360°, comme on peut le voir sur cette image : 
+
