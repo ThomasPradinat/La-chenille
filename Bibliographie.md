@@ -172,3 +172,11 @@ Avec une rotation dans l’axe de l’avant-bras, la tête peut être placée da
 
 Contrairement à tous les bras robotiques cités précédemment, le bras doit être capable de soulever chacune de ses extrémités en s’appuyant sur l’autre. Il ne faut donc pas que les moteurs à une extrémité soient moins puissants qu’à l’autre. Il faut donc partout les mêmes moteurs, tous assez puissants pour soulever le bras en entier, comme sur le Climbot[18].
 
+![climbot](https://github.com/ThomasPradinat/La-chenille/assets/147373681/26c51d70-8ca3-45a9-a0d5-ab4ca76fa4b1)
+
+Figure III. 1. 2. 4. – Schéma des liaisons du Climbot
+
+### III.	1. 3. Solution envisagée
+
+Le raisonnement précédent nous donne un bras à 5 axes, comme ceci : 
+
