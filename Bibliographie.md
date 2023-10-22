@@ -128,3 +128,25 @@ Le moteur linéaire que nous utiliserons devra être assez petit pour pouvoir ê
 
 Au total, pour chaque pince, nous utiliserons 8 ressorts par fixation (2 ressorts pour chaque doigt, sachant qu’une fixation compte 4 doigts). Cependant, lorsqu’il s’agit du ressort situé au joint A sur le schéma ci-dessus, deux solutions s’offrent à nous : choisir un ressort de compression ou choisir un ressort de traction. Nous souhaitons placer un piston dans les ressorts de compression que nous utiliserons pour qu’ils ne puissent pousser que dans une direction unique et ne se déforment pas durant l’effort : utiliser un ressort de traction permettrai de s’affranchir de l’utilisation d’un piston dans le ressort :
 
+![deux configurations ressort](https://github.com/ThomasPradinat/La-chenille/assets/147373681/a10feda2-bf38-4eaa-bd24-7fca4afe7ac3)
+
+Figure I.3. – Schéma du système de ressorts
+
+
+### II. 4. Résumé
+La fixation que nous avons retenue est une pince constituée de quatre doigts, qui pourra s’ouvrir par l’activation d’un moteur linéaire. Lorsque le moteur linéaire n’est pas activé, la pince tient en position « fermée » grâce à un système de ressorts. Même si le choix des ressorts se porte plus vers des ressorts de compression, la question se pose de savoir si on ne placerait pas des ressorts à traction pour faire le lien entre la première phalange et le corps de la pince.
+
+
+
+## Chapitre III : La mobilité 
+
+### III. 1. Le bras
+
+### III.	1. 1. Cahier des charges
+Le bras doit être capable d’orienter la tête de la chenille dans toutes les directions. Aussi le mouvement de la tête doit être fait dans les trois dimensions car le tronc doit être considéré comme cylindrique et non plat comme le laissait entendre la figure. 
+
+
+### III.	1. 2. Etat de l’art
+
+Parmi les bras robotiques qui existent dans la littérature, nous en avons sélectionnés quelques-uns pour décrire notre raisonnement : 
+
