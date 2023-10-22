@@ -53,55 +53,55 @@ Ecole Polytechnique Universitaire de Nice Sophia-Antipolis, Département robotiq
 
 SOMMAIRE
 
-Introduction	4
+Introduction
 
-Chapitre I : Présentation générale du robot	5
+Chapitre I : Présentation générale du robot
 
-Chapitre II : L'accroche du robot	6
+Chapitre II : L'accroche du robot
 
-II.1. Cahier des charges	
+- II.1. Cahier des charges	
 
-II.2. Etat de l'art	
+- II.2. Etat de l'art	
 
-II.3. Résumé	
+- II.3. Résumé	
 
-Chapitre III : La mobilité	8
+Chapitre III : La mobilité
 
-III.1. Le bras	
+- III.1. Le bras	
 
-III.1.1. Cahier des charges	
+  - III.1.1. Cahier des charges	
 
-III.1.2. Etat de l'art	
+  - III.1.2. Etat de l'art	
 
-III.1.3. Solution envisagée	
+  - III.1.3. Solution envisagée	
 
-III.1.4. Résumé	
+  - III.1.4. Résumé	
 
-III.2. Résumé	
+- III.2. Résumé	
 
-III.2.1. Cahier des charges	
+  - III.2.1. Cahier des charges	
 
-III.2.2. Etat de l'art et solution envisagée	
+  - III.2.2. Etat de l'art et solution envisagée	
 
-Chapitre IV : Les capteurs	13
+Chapitre IV : Les capteurs
 
-IV.1. Cahier des charges	
+- IV.1. Cahier des charges	
 
-IV.2. Etat de l'art	
+- IV.2. Etat de l'art	
 
-IV.3. Résumé	
+- IV.3. Résumé	
 
-Chapitre V : Alimentation et matériaux	13
+Chapitre V : Alimentation et matériaux
 
-V.1. L'alimentation	
+- V.1. L'alimentation	
 
-V.3. Matériaux	
+- V.2. Matériaux	
 
-Conclusion	14
+Conclusion
 
-Annexes	15
+Annexes
 
-Bibliographie	17
+Bibliographie
 
 
 
