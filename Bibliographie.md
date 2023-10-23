@@ -319,6 +319,10 @@ PLanning Aurélien : 
 <img width="470" alt="planing Aurelien" src="https://github.com/ThomasPradinat/La-chenille/assets/147373681/54160d55-e8be-4af6-af04-c0d8bfbd10da">
 
 
+Pert : 
+
+![Edt](https://github.com/ThomasPradinat/La-chenille/assets/147373681/2cc9c3e4-c297-4cd4-9981-76ee9e80cae8)
+
 
 
 
