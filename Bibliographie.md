@@ -290,7 +290,7 @@ Le robot sera constitué de deux parties (les fixations) reliées par un bras m�
 
 ## Annexes
 
-### Annexe 1
+### Annexe 1 : Liste des pièces à commander
 
 Moteur linéaire   Quantité : 2   Lien moteur linéaire : 
 https://www.amazon.fr/Poweka-automatique-Domotique-escamotables-Ascenseur/dp/B0B4MWRFX9/ref=sr_1_6?keywords=Linear+Actuator+12&qid=1696067441&sr=8-6 
@@ -312,7 +312,7 @@ https://fr.aliexpress.com/item/4000091864476.html?src=google&src=google&albch=sh
 Batterie   Quantité : 1   Lien batterie : 
 https://fr.grandado.com/products/original-12v-6-8-ah-6800mah-18650-batteries-rechargeables-12v-avec-bms-batterie-au-lithium-carte-de-protection-chargeur-12-6v?variant=UHJvZHVjdFZhcmlhbnQ6MjM2NTc1OTE0&gclid=CjwKCAjwkNOpBhBEEiwAb3MvvbuRh8Ids2Y29pXX_rKz-rfYT0E51n6E6kvAsRBGaC-MrQd_PXtcFBoCMk0QAvD_BwE
 
-### Annexe 2
+### Annexe 2 : Planning
 
 PLanning Thomas : 
 
