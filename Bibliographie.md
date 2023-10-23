@@ -6,7 +6,9 @@
 
 ## "Absolem, le robot chenille" 
 
+<img width="419" alt="vrai chenille" src="https://github.com/ThomasPradinat/La-chenille/assets/147373681/4d29b74c-35a0-47ee-a780-b57e2a60f4d7">
 
+![montage représentation robot](https://github.com/ThomasPradinat/La-chenille/assets/147373681/2bf0546f-9cf5-4cda-9b87-6021e26f016c)
 
 Etudiants : Pradinat Thomas et Dorolle Aurélien 
 
